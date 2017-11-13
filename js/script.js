@@ -84,3 +84,26 @@ sumNums(2,2);
 // console.log(sumNums(2,2));
 
 var mySum = sumNums(900, 2344);
+
+var apollo = {
+  isDog: true,
+  breed: 'mutt',
+  legs: 4,
+  age: 2,
+  toys: ['Mrs. Moose', 'bone', 'half a giraffe'],
+  // Speak method on the apollo object. Method is a property of an object.
+  speak: function(say) {
+    console.log(say + " woof woof");
+  },
+  sayHiTo: function(name, age) {
+    console.log("Hi " + name + " woof woof! " + age);
+  }
+};
+
+apollo.speak("Who are you? ");
+
+// for functions that use multiples parameters, the order matters
+apollo.sayHiTo("Stella", 2);
+
+// console object is a gobal object within the browser
+console.log(console);
